@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#body{
+  /* background-image: url("../public/real\ estate\ background\ image.jpeg"); */
+  height: 100vw;
+  width: 100vw;
+}
