@@ -37,7 +37,7 @@ export default function Login(variables){
     const handleLogin = () => {
         console.log("HANDLING LOGIN: ",formData)
         const query = createURLQuery(formData)
-        fetch('http://13.215.50.32:8080/login'+query)
+        fetch('https://13.215.50.32:8080/login'+query)
         .then(res=>{
             return res.json();
         })
