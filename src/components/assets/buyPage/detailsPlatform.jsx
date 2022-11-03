@@ -16,7 +16,7 @@ export default function DetailsPlatform(variables){
         const data = variables.data;
         data["token"] = variables.token;
         const query = createURLQuery(data);
-        fetch('http://localhost:8080/createbuyinterest'+query)
+        fetch('http://13.215.50.32:8080/createbuyinterest'+query)
         .then(res=>{
             return res.json()
         })

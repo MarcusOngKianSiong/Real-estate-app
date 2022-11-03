@@ -26,7 +26,6 @@ export default function DisplaySalesOnMap(variables){
     
 
     // Establish the map and the graphic layer
-    
 
     const findAddressBasedOnCoordinates = (targetCoordinates,sales) => {
         console.log("HERE!!!! ->>>>", sales)
@@ -94,7 +93,7 @@ export default function DisplaySalesOnMap(variables){
                         const params = {
                             location: response.results[0].mapPoint
                         }; 
-
+                        
                         locationToAddress(locatorUrl,params)
                         .then(res=>{
                             const pointAddress = findAddressBasedOnCoordinates({lantitude: response.results[0].graphic.geometry.latitude,longitude: response.results[0].graphic.geometry.longitude},salesData)
@@ -104,8 +103,7 @@ export default function DisplaySalesOnMap(variables){
                         
                         // console.log(response.results[0].mapPoint)
                     }
-                }) 
-                
+                })                 
             })
 
             map.popup.on("trigger-action",(event)=>{
