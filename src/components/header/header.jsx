@@ -6,14 +6,14 @@ import Sell from '../pages/sell';
 import Register from '../pages/register';
 import Login from '../pages/login';
 
-export default function Header(){
+export default function Header(variables){
+    
     return(
         <div id="header">
                     <Link to="/">Home</Link>
                     <Link to="/buy">Buy</Link>
                     <Link to="/sell">Sell</Link>
-                    <Link to="/login">Login</Link>
-                    <Link to="/register">Register</Link>
+                    {variables.loginAndRegister}
         </div>
     )
 }
