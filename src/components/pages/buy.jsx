@@ -11,7 +11,7 @@ export default function Buy(variables){
     
     const getSellData = () => {
         console.log("RUNNING THIS DAM THING!!!!")
-        const data =  fetch('http://localhost:8080/buyData')
+        const data =  fetch('http://13.215.50.32:8080/buyData')
         return data.then(res=>{return res.json()})
     }
 
@@ -36,7 +36,7 @@ export default function Buy(variables){
     const indicatePurchaseIntent = (saleID) => {
         console.log("-------------STORING PURCHASE--------------")
         // store the buy data in your data base
-        fetch('http://localhost:8080/buy').then(res=>{
+        fetch('http://13.215.50.32:8080/buy').then(res=>{
             return res.json()
         })
         .then(res=>{
